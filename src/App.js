@@ -14,6 +14,7 @@ import GamePc from './pages/game-pc/GamePc';
 import News from './pages/news/News';
 import NewsInfo from './pages/news-info/NewsInfo';
 import Giveaways from './pages/giveaways/Giveaways';
+import Error from './pages/error/Error';
 
 function App() {
     const dispatch = useDispatch()
@@ -60,6 +61,7 @@ function App() {
         <Route path='/news' element={<News/>} />
         <Route path='/news/:newsId' element={<NewsInfo/>} />
         <Route path='/giveaways' element={<Giveaways/>} />
+        <Route path='*' element={<Error/>} />
       </Routes>
     </div>
   );
