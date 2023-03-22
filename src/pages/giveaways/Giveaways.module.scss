@@ -1,0 +1,74 @@
+.wrapper_giveaways{
+    background: url('../../img/cateru_bg.webp') no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+    background-attachment:fixed;
+}
+.head_giveaways_info{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 40px 40px 20px;
+    min-height: 50vh;
+    position: relative;
+}
+.head_giveaways_info_tit{
+    font: 800 40px Russo one;
+    color: rgba(241, 118, 2, 0.934);
+
+    span{
+        color:#fff;
+    }
+}
+.giveaways_content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 0 0 40px 0;
+}
+.giveaways_box{
+    max-width: 300px;
+    display: flex;
+    gap: 30px;
+    flex-flow: column;
+    justify-content: space-between;
+    text-align: center;
+    background: #cccccc6f;
+    padding: 20px;
+    border-radius: 10px;
+}
+.main_image{
+    width: 100%;
+    max-width: 300px;
+}
+.giveaways_box_tit{
+    font: 700 16px Russo One;
+    color:rgba(241, 118, 2, 0.934);
+    background: rgba(0, 0, 0, 0.452);
+    border-radius: 10px;
+    padding: 10px;
+}
+.giveaways_box_descr{
+    font: 700 14px Roboto;
+    color: #fff;
+    margin: 15px;
+}
+.progress_giveaways{
+    height: 25px !important;
+    border-radius: 10px;
+    position: relative;
+
+    &::after{
+        content: attr(data-percent);
+        width: 40px;
+        top: 3px;
+        right: 0px;
+        position: absolute;
+        font: 900 15px Roboto;
+    }
+
+    div{
+        background:rgba(241, 118, 2, 0.934);
+    }
+}

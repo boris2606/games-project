@@ -1,0 +1,67 @@
+.footer_wrapper{
+    background: rgba(0, 0, 0, 0.506);
+    padding: 15px;
+}
+
+@media screen and (max-width: 400px){
+    .footer_wrapper{
+        display: none;
+    }
+}
+.footer_content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header_logo{
+    font: 800 25px Russo One;
+    color: #fff;
+    animation: colorAnim1 2s ease-in-out infinite;
+    display: block;
+    text-align: center;
+
+    span{
+        color:rgb(242,127,36);
+        animation: colorAnim2 2s ease-in-out infinite;
+    }
+}
+
+@keyframes colorAnim1 {
+    0%{
+        color: #fff;
+    }
+    50%{
+        color: rgb(242,127,36);
+    }
+    100%{
+        color: #fff;
+}
+}
+@keyframes colorAnim2 {
+    0%{
+        color:rgb(242,127,36)
+    }
+    50%{
+        color:  #fff;;
+    }
+    100%{
+        color:rgb(242,127,36)
+    }
+}
+
+.footer_navigation{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 10px;
+
+    a{
+        text-transform: uppercase;
+        font: 800 15px Russo One;
+        color: #fff;
+        border-bottom: 2px solid rgb(242,127,36);
+    }
+}

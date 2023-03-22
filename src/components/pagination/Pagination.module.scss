@@ -1,0 +1,26 @@
+.pagination_wrapper{
+    display: flex;
+    justify-content: center;
+    gap:15px;
+
+    li{
+        padding: 5px;
+        color: rgba(241, 118, 2, 0.934);
+        font: 500 18px Russo One;
+        background: #fff;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        border-radius:5px;
+        cursor: pointer;
+        transition: .4s all ease-in-out;
+        list-style: none;
+    }
+}
+.active {
+    background:rgba(241, 118, 2, 0.934) !important;
+    color:#fff !important;
+}
+.pagination_wrapper{
+    padding: 40px;
+}

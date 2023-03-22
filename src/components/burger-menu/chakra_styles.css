@@ -1,0 +1,12 @@
+.chakra-modal__content{
+    background: linear-gradient(to top, rgba(58, 58, 58, 0.205), rgb(120 119 119 / 47%)),url('../../img/bg_burger.jpeg') no-repeat center !important;
+    background-size:cover;
+    border-right: 5px solid rgba(242,127,36, .8);
+    color: #fff !important;
+}
+.chakra-modal__close-btn{
+    background:rgba(242,127,36, .8) !important;
+    color: #fff;
+    border-radius: 30px !important;
+    font:900 16px Roboto !important;
+}

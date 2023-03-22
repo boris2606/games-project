@@ -1,0 +1,57 @@
+.menu_btn{
+    span{
+        font-size: 35px;
+        color: rgb(242,129,39);
+    }
+}
+.header_logo{
+    font: 800 25px Russo One;
+    color: #fff;
+    animation: BurgerMenu_colorAnim1__ul9lv 2s ease-in-out infinite;
+    margin: 40px auto;
+    display: block;
+    text-align: center;
+
+    span{
+        color:rgb(242,127,36);
+        animation: colorAnim2 2s ease-in-out infinite;
+    }
+}
+@keyframes colorAnim1 {
+    0%{
+        color: #fff;
+    }
+    50%{
+        color: rgb(242,127,36);
+    }
+    100%{
+        color: #fff;
+}
+}
+@keyframes colorAnim2 {
+    0%{
+        color:rgb(242,127,36)
+    }
+    50%{
+        color:  #fff;;
+    }
+    100%{
+        color:rgb(242,127,36)
+    }
+}
+.burger_menu_ul{
+    margin: 0 auto;
+    max-width: 250px;
+    display: flex;
+    flex-flow: column;
+    gap: 30px;
+
+    a{
+        font: 800 20px Russo One;
+        background: rgba(0, 0, 0, 0.178);
+        border-radius: 10px;
+        padding: 5px 10px;
+        text-transform: uppercase;
+        list-style: none;
+    }
+}

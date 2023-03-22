@@ -1,0 +1,97 @@
+.wrapper_browser_games{
+    background: url('../../img/games_bg.png') no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+    background-attachment:fixed;
+}
+.browser_games_head_block{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 40px 40px 20px;
+    min-height: 50vh;
+    position: relative;
+}
+.browser_games_head_tit_text{
+    font: 800 40px Russo one;
+    color:rgba(241, 118, 2, 0.934);
+
+    span{
+        color:#fff;
+    }
+}
+.wrapper_browser_games_content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px 20px 70px;
+}
+.game_box{
+    width: 100%;
+    max-width: 200px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    transition: .5s all ease-in-out;
+    cursor: pointer;
+
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+.game_tit_name{
+    margin: 10px;
+    text-align: center;
+    font:600 18px Roboto;
+    color:rgba(241, 118, 2, 0.934);
+}
+.sub_info_game_box{
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    color: #fff;
+    background:rgba(241, 118, 2, 0.934);
+}
+
+.game_category_tit{
+    text-align: center;
+    font: 700 25px Roboto;
+    color:#fff;
+    text-transform: uppercase;
+
+    span{
+        color:rgba(241, 118, 2, 0.934);
+    }
+}
+
+.select_genre_browser_game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.games_hr{
+    width: 90%;
+    height: 4px;
+    background:rgba(241, 118, 2, 0.55);
+    border: 0;
+    margin: 20px auto 10px;
+}
+.select_tit_text{
+    font: 700 25px Roboto;
+    color: #fff;
+    text-transform: uppercase;
+}
+.broser_games_select{
+    background: #ffa500c7;
+    border: 2px solid orange;
+    padding: 5px 10px;
+    color: #fff;
+    font: 700 15px Roboto;
+    text-transform: uppercase;
+    outline: none;
+}

@@ -1,0 +1,93 @@
+.wrapper_header{
+    position: relative;
+}
+.header_content{
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-image: linear-gradient(to right, #434343e6 0%, #000000f0 100%);
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.burger_wrapper{
+    position: absolute;
+    left: 10px;
+    top: 7px;
+}
+.header_logo{
+    font: 800 25px Russo One;
+    color: #fff;
+    animation: colorAnim1 2s ease-in-out infinite;
+
+    span{
+        color:rgb(242,127,36);
+        animation: colorAnim2 2s ease-in-out infinite;
+    }
+}
+@keyframes colorAnim1 {
+    0%{
+        color: #fff;
+    }
+    50%{
+        color: rgb(242,127,36);
+    }
+    100%{
+        color: #fff;
+}
+}
+@keyframes colorAnim2 {
+    0%{
+        color:rgb(242,127,36)
+    }
+    50%{
+        color:  #fff;;
+    }
+    100%{
+        color:rgb(242,127,36)
+}
+}
+.header_navigation_content{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+    flex-wrap: wrap;
+
+    li{
+        color: #ffffffeb;
+        font: 700 16px Roboto;
+        text-transform: uppercase;
+        transition: .5s all ease-in-out;
+        border-radius: 5px;
+        border-bottom: 2px solid transparent;
+        border-right: 2px solid transparent;
+        padding: 10px;
+
+        &:hover{
+            color:rgb(242,127,36);
+            border-bottom: 2px solid rgb(242,127,36);
+            border-right: 2px solid rgb(242,127,36);
+            border-radius: 0px 20px 0 20px;
+        }
+    }
+}
+.hide_header{
+    display: none;
+}
+
+.burger_wrapper{
+    display: none;
+}
+
+@media screen and (max-width: 765px) {
+    .burger_wrapper{
+        display: block;
+    }
+    .header_navigation_content{
+        display: none;
+    }
+}

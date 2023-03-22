@@ -1,0 +1,136 @@
+.wrapper_game_info{
+    background: url('../../img/cateru_bg.webp') no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+    background-attachment:fixed;
+}
+.game_info_head{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 40px 40px 20px;
+    min-height: 50vh;
+    position: relative;
+}
+.game_info_head{
+    font: 800 40px Russo one;
+    color:#fff;
+    text-transform: uppercase;
+
+    span{
+        color:rgba(241, 118, 2, 0.934);
+    }
+}
+.game_info_content{
+    display: flex;
+    justify-content: space-around;
+    color:#fff;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+  
+    padding-bottom: 80px;
+    gap: 30px;
+}
+@media screen and (max-width: 400px) {
+    .game_info_content{
+        flex-wrap: wrap;
+    }
+}
+.game_info_systems_params{
+    min-width: 350px;
+    max-height: 500px;
+    padding: 20px;
+    background-color: #ccccccc2;
+    text-align: left;
+    border-radius: 10px;
+
+    img{
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+}
+
+.system_param_tit_txt{
+    font: 700 20px Roboto;
+    color: rgba(241, 118, 2, 0.934);
+    margin: 10px auto;
+    background: #fff;
+    padding: 5px 10px;
+    border-radius: 5px 31px 0px 20px;
+}
+.game_link{
+    display: block;
+    padding: 10px;
+    font: 700 20px Roboto;
+    color: #fff;
+    background:rgba(241, 118, 2, 0.534);
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: .5s all ease-in-out;
+
+    &:hover{
+        color: black;
+        background:rgba(241, 118, 2, 0.934);
+    }
+}
+.game_info_system_params{
+    display: flex;
+    gap:5px;
+    flex-flow: column;
+    
+    p{
+        color:rgba(0, 0, 0, 0.5);
+        text-transform: uppercase;
+        font: 700 14px Roboto;
+        text-shadow: 0px 0px 1px rgba(0,0,0,0.65);
+
+        span{
+            text-transform: lowercase;
+            color: #fff;
+            margin-left: 10px;
+        }
+    }
+}
+.game_info_description_txt{
+    font: 600 18px Roboto;
+    margin: 20px auto 10px;
+    background: #ffffff34;
+    padding: 10px;
+}
+.game_info_slider_descr{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+    background: #ffffff31;
+}
+.game_Info_addition_tit{
+    font: 800 25px Russo One;
+    margin: 10px;
+    color:rgba(241, 118, 2, 0.934);
+}
+.game_Info_addition_content{
+    background: #ffffff87;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+    gap: 20px;
+    border-radius: 10px;
+}
+.addition_box{
+    border: 2px solid #ccc;
+    padding: 5px;
+    border-radius: 10px;
+}
+.addition_tit{
+    font: 700 14px Roboto;
+    color:rgba(0, 0, 0, 0.5)
+}
+.addition_tit_sec{
+    font: 700 16px Roboto;
+    color: black;
+}

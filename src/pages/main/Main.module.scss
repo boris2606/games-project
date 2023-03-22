@@ -1,0 +1,63 @@
+.wrapper_main{
+    min-height: 100vh;
+    background: url('../../img/main_bg.jpeg') no-repeat center;
+    background-size: cover;
+}
+.swiper {
+    width: 100%;
+    height: 100vh;
+
+    & div:last-child span{
+        background:rgba(241, 118, 2, 0.934);
+        height:30px;
+        width: 10px;
+        border-radius: 5px;
+    }
+}
+.swipper_slide{
+    text-align: center;
+    font-size: 18px;
+    display: flex !important;
+    justify-content: left;
+    align-items: center;
+    padding: 5% 10%;
+}
+.flex_right_slide{
+    justify-content: right;
+
+    .slide_info_text{
+        text-align: right;
+    }
+}
+.slide_info_text{
+    text-align: left;
+}
+.slide_tit_text{
+    font: 800 50px Russo one;
+    color: rgba(241, 118, 2, 0.934);
+
+    i{
+        color: #fff;
+        padding: 0 20px;
+    }
+}
+.slide_sec_text{
+    font: 600 25px Roboto;
+    color: #fff;
+    margin: 15px 0 30px;
+}
+
+.slide_link{
+    font: 600 20px Roboto;
+    padding: 10px;
+    color: #fff;
+    background: rgb(224 109 4 / 63%);
+    border-radius: 10px;
+    transition: .5s all ease-in-out;
+
+    &:hover{
+        background: rgb(224, 110, 4);
+        color: black
+    }
+}
+
