@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-let gameInfo = JSON.parse(localStorage.getItem('gameInfo')) || {}
+let gameInfo = JSON.parse(localStorage.getItem('gameInfo')) || []
 let dataNews = JSON.parse(localStorage.getItem('dataNews')) || []
 let dataGiveaways = JSON.parse(localStorage.getItem('dataGiveaways')) || []
 

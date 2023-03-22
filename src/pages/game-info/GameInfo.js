@@ -16,7 +16,6 @@ const GameInfo = () => {
 
     const dataGamesList = useSelector(state => state.toolkit.dataGamesList)
     const dataGameInfo = useSelector(state => state.toolkit.dataGameInfo)
-    console.log(dataGameInfo);
     const currentGameArr = dataGamesList.find(game => game.title.toLowerCase() === gameInfo) || dataGameInfo
 
     const getGameData = useCallback( async () => {
