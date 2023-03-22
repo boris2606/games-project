@@ -17,7 +17,7 @@ const GameInfo = () => {
     const dataGamesList = useSelector(state => state.toolkit.dataGamesList)
     const dataGameInfo = useSelector(state => state.toolkit.dataGameInfo)
     const currentGameArr = dataGamesList.find(game => game.title.toLowerCase() === gameInfo) || dataGameInfo
-
+    console.log(dataGameInfo);
     const getGameData = useCallback( async () => {
         const {data} = await axios.get('/game',{
             params: {id: `${currentGameArr.id}`},
@@ -57,11 +57,11 @@ const GameInfo = () => {
                 </div>
                 <div className={styles.game_info_descriptio}>
                     <div className={styles.game_info_slider_descr}>
-                        {dataGameInfo.screenshots.map(img => {
+                        {/* {dataGameInfo.screenshots.map(img => {
                             return <ImageViewer key={img.id} className={styles.game_infi_slide}>
                                 <img src={img.image}  alt={img.image} />
                             </ImageViewer>
-                        })}
+                        })} */}
                     </div>
                     <div className={styles.game_info_description_txt}>
                         {dataGameInfo.description ? parse(dataGameInfo.description) : false}
