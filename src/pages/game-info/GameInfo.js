@@ -58,7 +58,6 @@ const GameInfo = () => {
                 <div className={styles.game_info_descriptio}>
                     <div className={styles.game_info_slider_descr}>
                         {dataGameInfo.screenshots ? dataGameInfo.screenshots.map(img => {
-                            console.log(dataGameInfo.screenshots);
                             return <ImageViewer key={img.id} className={styles.game_infi_slide}>
                                 <img src={img.image}  alt={img.image} />
                             </ImageViewer>

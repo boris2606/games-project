@@ -15,9 +15,9 @@ const Header = () => {
                 <Link className={styles.header_logo} to='/'>GAME<span>Finder</span></Link>
                 <ul className={styles.header_navigation_content}>
                     {headerNav.map((elem,index) => {
-                        return <li key={index}>
-                            <Link to={elem.path}>{elem.name}</Link>
-                        </li>
+                        return <Link to={elem.path} key={index}> 
+                                    <li >{elem.name}</li>
+                                </Link>
                     })}
                 </ul>
             </div>
