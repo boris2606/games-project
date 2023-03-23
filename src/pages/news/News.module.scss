@@ -48,8 +48,10 @@
     padding: 20px;
     border-radius: 10px;
 }
-
-@media screen and (max-width:400px){
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
     .news_box{
         flex-wrap: wrap;
         max-width: 300px;
