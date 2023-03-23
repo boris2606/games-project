@@ -35,6 +35,7 @@
 @media screen and (max-width: 400px) {
     .game_info_content{
         flex-wrap: wrap;
+        flex-flow: column;
     }
 }
 .game_info_systems_params{
